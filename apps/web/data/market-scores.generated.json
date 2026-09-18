@@ -1,0 +1,3262 @@
+{
+  "generatedFrom": "data/samples/colombia_sector_metrics.synthetic.csv",
+  "checksumSha256": "f1f9ff5fd22d8810f77bb7a86634f2236b85393a6aaf604188b425faad34ed6e",
+  "synthetic": true,
+  "scores": [
+    {
+      "id": "Bogotá-construction",
+      "city": "Bogotá",
+      "sectorCode": "construction",
+      "sector": "Construction & installers",
+      "period": "2025",
+      "score": 78,
+      "confidence": 84.95,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.9,
+          "evidenceId": "Bogotá-construction-confidence-authority",
+          "contribution": 27
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.85,
+          "evidenceId": "Bogotá-construction-confidence-completeness",
+          "contribution": 21.25
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.75,
+          "evidenceId": "Bogotá-construction-confidence-freshness",
+          "contribution": 15
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.78,
+          "evidenceId": "Bogotá-construction-confidence-consistency",
+          "contribution": 11.7
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Bogotá-construction-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.78,
+          "evidenceId": "Bogotá-construction-digital_gap",
+          "contribution": 15.6
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.82,
+          "evidenceId": "Bogotá-construction-automation_potential",
+          "contribution": 16.4
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.62,
+          "evidenceId": "Bogotá-construction-economic_capacity",
+          "contribution": 9.3
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.88,
+          "evidenceId": "Bogotá-construction-accessible_market",
+          "contribution": 13.2
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.74,
+          "evidenceId": "Bogotá-construction-competitive_pressure",
+          "contribution": 7.4
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.86,
+          "evidenceId": "Bogotá-construction-service_fit",
+          "contribution": 8.6
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.75,
+          "evidenceId": "Bogotá-construction-accessibility",
+          "contribution": 7.5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Bogotá-construction-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-construction-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Bogotá-health",
+      "city": "Bogotá",
+      "sectorCode": "health",
+      "sector": "Clinics & wellness",
+      "period": "2025",
+      "score": 79,
+      "confidence": 90,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.95,
+          "evidenceId": "Bogotá-health-confidence-authority",
+          "contribution": 28.5
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.9,
+          "evidenceId": "Bogotá-health-confidence-completeness",
+          "contribution": 22.5
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.82,
+          "evidenceId": "Bogotá-health-confidence-freshness",
+          "contribution": 16.4
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.84,
+          "evidenceId": "Bogotá-health-confidence-consistency",
+          "contribution": 12.6
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Bogotá-health-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.65,
+          "evidenceId": "Bogotá-health-digital_gap",
+          "contribution": 13
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.9,
+          "evidenceId": "Bogotá-health-automation_potential",
+          "contribution": 18
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.78,
+          "evidenceId": "Bogotá-health-economic_capacity",
+          "contribution": 11.7
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.8,
+          "evidenceId": "Bogotá-health-accessible_market",
+          "contribution": 12
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.7,
+          "evidenceId": "Bogotá-health-competitive_pressure",
+          "contribution": 7
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.92,
+          "evidenceId": "Bogotá-health-service_fit",
+          "contribution": 9.2
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.81,
+          "evidenceId": "Bogotá-health-accessibility",
+          "contribution": 8.1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Bogotá-health-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-health-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Bogotá-real_estate",
+      "city": "Bogotá",
+      "sectorCode": "real_estate",
+      "sector": "Real estate",
+      "period": "2025",
+      "score": 74.4,
+      "confidence": 91.9,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.95,
+          "evidenceId": "Bogotá-real_estate-confidence-authority",
+          "contribution": 28.5
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.92,
+          "evidenceId": "Bogotá-real_estate-confidence-completeness",
+          "contribution": 23
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.86,
+          "evidenceId": "Bogotá-real_estate-confidence-freshness",
+          "contribution": 17.2
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.88,
+          "evidenceId": "Bogotá-real_estate-confidence-consistency",
+          "contribution": 13.2
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Bogotá-real_estate-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.52,
+          "evidenceId": "Bogotá-real_estate-digital_gap",
+          "contribution": 10.4
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.74,
+          "evidenceId": "Bogotá-real_estate-automation_potential",
+          "contribution": 14.8
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.82,
+          "evidenceId": "Bogotá-real_estate-economic_capacity",
+          "contribution": 12.3
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.76,
+          "evidenceId": "Bogotá-real_estate-accessible_market",
+          "contribution": 11.4
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.84,
+          "evidenceId": "Bogotá-real_estate-competitive_pressure",
+          "contribution": 8.4
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.83,
+          "evidenceId": "Bogotá-real_estate-service_fit",
+          "contribution": 8.3
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.88,
+          "evidenceId": "Bogotá-real_estate-accessibility",
+          "contribution": 8.8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Bogotá-real_estate-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-real_estate-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Bogotá-technical_services",
+      "city": "Bogotá",
+      "sectorCode": "technical_services",
+      "sector": "Technical services",
+      "period": "2025",
+      "score": 76.8,
+      "confidence": 80.9,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.86,
+          "evidenceId": "Bogotá-technical_services-confidence-authority",
+          "contribution": 25.8
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.8,
+          "evidenceId": "Bogotá-technical_services-confidence-completeness",
+          "contribution": 20
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.7,
+          "evidenceId": "Bogotá-technical_services-confidence-freshness",
+          "contribution": 14
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.74,
+          "evidenceId": "Bogotá-technical_services-confidence-consistency",
+          "contribution": 11.1
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Bogotá-technical_services-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.84,
+          "evidenceId": "Bogotá-technical_services-digital_gap",
+          "contribution": 16.8
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.88,
+          "evidenceId": "Bogotá-technical_services-automation_potential",
+          "contribution": 17.6
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.55,
+          "evidenceId": "Bogotá-technical_services-economic_capacity",
+          "contribution": 8.250000000000002
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.85,
+          "evidenceId": "Bogotá-technical_services-accessible_market",
+          "contribution": 12.75
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.61,
+          "evidenceId": "Bogotá-technical_services-competitive_pressure",
+          "contribution": 6.1
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.8,
+          "evidenceId": "Bogotá-technical_services-service_fit",
+          "contribution": 8
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.73,
+          "evidenceId": "Bogotá-technical_services-accessibility",
+          "contribution": 7.3
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Bogotá-technical_services-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-technical_services-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Bogotá-education",
+      "city": "Bogotá",
+      "sectorCode": "education",
+      "sector": "Academies & professional services",
+      "period": "2025",
+      "score": 73.65,
+      "confidence": 85.7,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.9,
+          "evidenceId": "Bogotá-education-confidence-authority",
+          "contribution": 27
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.86,
+          "evidenceId": "Bogotá-education-confidence-completeness",
+          "contribution": 21.5
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.76,
+          "evidenceId": "Bogotá-education-confidence-freshness",
+          "contribution": 15.2
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.8,
+          "evidenceId": "Bogotá-education-confidence-consistency",
+          "contribution": 12
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Bogotá-education-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.69,
+          "evidenceId": "Bogotá-education-digital_gap",
+          "contribution": 13.8
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.77,
+          "evidenceId": "Bogotá-education-automation_potential",
+          "contribution": 15.4
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.58,
+          "evidenceId": "Bogotá-education-economic_capacity",
+          "contribution": 8.7
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.79,
+          "evidenceId": "Bogotá-education-accessible_market",
+          "contribution": 11.85
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.68,
+          "evidenceId": "Bogotá-education-competitive_pressure",
+          "contribution": 6.8
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.87,
+          "evidenceId": "Bogotá-education-service_fit",
+          "contribution": 8.7
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.84,
+          "evidenceId": "Bogotá-education-accessibility",
+          "contribution": 8.4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Bogotá-education-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Bogotá-education-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Medellín-construction",
+      "city": "Medellín",
+      "sectorCode": "construction",
+      "sector": "Construction & installers",
+      "period": "2025",
+      "score": 75.25,
+      "confidence": 83.05,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.88,
+          "evidenceId": "Medellín-construction-confidence-authority",
+          "contribution": 26.4
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.82,
+          "evidenceId": "Medellín-construction-confidence-completeness",
+          "contribution": 20.5
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.73,
+          "evidenceId": "Medellín-construction-confidence-freshness",
+          "contribution": 14.6
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.77,
+          "evidenceId": "Medellín-construction-confidence-consistency",
+          "contribution": 11.55
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Medellín-construction-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.75,
+          "evidenceId": "Medellín-construction-digital_gap",
+          "contribution": 15
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.8,
+          "evidenceId": "Medellín-construction-automation_potential",
+          "contribution": 16
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.6,
+          "evidenceId": "Medellín-construction-economic_capacity",
+          "contribution": 9
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.77,
+          "evidenceId": "Medellín-construction-accessible_market",
+          "contribution": 11.55
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.79,
+          "evidenceId": "Medellín-construction-competitive_pressure",
+          "contribution": 7.9
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.86,
+          "evidenceId": "Medellín-construction-service_fit",
+          "contribution": 8.6
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.72,
+          "evidenceId": "Medellín-construction-accessibility",
+          "contribution": 7.2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Medellín-construction-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-construction-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Medellín-health",
+      "city": "Medellín",
+      "sectorCode": "health",
+      "sector": "Clinics & wellness",
+      "period": "2025",
+      "score": 77.05,
+      "confidence": 88.2,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.93,
+          "evidenceId": "Medellín-health-confidence-authority",
+          "contribution": 27.9
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.88,
+          "evidenceId": "Medellín-health-confidence-completeness",
+          "contribution": 22
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.8,
+          "evidenceId": "Medellín-health-confidence-freshness",
+          "contribution": 16
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.82,
+          "evidenceId": "Medellín-health-confidence-consistency",
+          "contribution": 12.3
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Medellín-health-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.61,
+          "evidenceId": "Medellín-health-digital_gap",
+          "contribution": 12.2
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.89,
+          "evidenceId": "Medellín-health-automation_potential",
+          "contribution": 17.8
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.76,
+          "evidenceId": "Medellín-health-economic_capacity",
+          "contribution": 11.4
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.73,
+          "evidenceId": "Medellín-health-accessible_market",
+          "contribution": 10.95
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.76,
+          "evidenceId": "Medellín-health-competitive_pressure",
+          "contribution": 7.6
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.93,
+          "evidenceId": "Medellín-health-service_fit",
+          "contribution": 9.3
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.78,
+          "evidenceId": "Medellín-health-accessibility",
+          "contribution": 7.8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Medellín-health-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-health-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Medellín-real_estate",
+      "city": "Medellín",
+      "sectorCode": "real_estate",
+      "sector": "Real estate",
+      "period": "2025",
+      "score": 71.35,
+      "confidence": 89.25,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.94,
+          "evidenceId": "Medellín-real_estate-confidence-authority",
+          "contribution": 28.2
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.89,
+          "evidenceId": "Medellín-real_estate-confidence-completeness",
+          "contribution": 22.25
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.81,
+          "evidenceId": "Medellín-real_estate-confidence-freshness",
+          "contribution": 16.2
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.84,
+          "evidenceId": "Medellín-real_estate-confidence-consistency",
+          "contribution": 12.6
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Medellín-real_estate-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.49,
+          "evidenceId": "Medellín-real_estate-digital_gap",
+          "contribution": 9.8
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.7,
+          "evidenceId": "Medellín-real_estate-automation_potential",
+          "contribution": 14
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.8,
+          "evidenceId": "Medellín-real_estate-economic_capacity",
+          "contribution": 12
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.69,
+          "evidenceId": "Medellín-real_estate-accessible_market",
+          "contribution": 10.35
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.86,
+          "evidenceId": "Medellín-real_estate-competitive_pressure",
+          "contribution": 8.6
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.82,
+          "evidenceId": "Medellín-real_estate-service_fit",
+          "contribution": 8.2
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.84,
+          "evidenceId": "Medellín-real_estate-accessibility",
+          "contribution": 8.4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Medellín-real_estate-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-real_estate-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Medellín-technical_services",
+      "city": "Medellín",
+      "sectorCode": "technical_services",
+      "sector": "Technical services",
+      "period": "2025",
+      "score": 77.35,
+      "confidence": 78.7,
+      "confidenceLabel": "medium",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.84,
+          "evidenceId": "Medellín-technical_services-confidence-authority",
+          "contribution": 25.2
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.78,
+          "evidenceId": "Medellín-technical_services-confidence-completeness",
+          "contribution": 19.5
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.66,
+          "evidenceId": "Medellín-technical_services-confidence-freshness",
+          "contribution": 13.2
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.72,
+          "evidenceId": "Medellín-technical_services-confidence-consistency",
+          "contribution": 10.8
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Medellín-technical_services-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.86,
+          "evidenceId": "Medellín-technical_services-digital_gap",
+          "contribution": 17.2
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.91,
+          "evidenceId": "Medellín-technical_services-automation_potential",
+          "contribution": 18.2
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.51,
+          "evidenceId": "Medellín-technical_services-economic_capacity",
+          "contribution": 7.65
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.82,
+          "evidenceId": "Medellín-technical_services-accessible_market",
+          "contribution": 12.3
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.66,
+          "evidenceId": "Medellín-technical_services-competitive_pressure",
+          "contribution": 6.6
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.84,
+          "evidenceId": "Medellín-technical_services-service_fit",
+          "contribution": 8.4
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.7,
+          "evidenceId": "Medellín-technical_services-accessibility",
+          "contribution": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Medellín-technical_services-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-technical_services-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Medellín-education",
+      "city": "Medellín",
+      "sectorCode": "education",
+      "sector": "Academies & professional services",
+      "period": "2025",
+      "score": 71.9,
+      "confidence": 83.55,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.89,
+          "evidenceId": "Medellín-education-confidence-authority",
+          "contribution": 26.7
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.83,
+          "evidenceId": "Medellín-education-confidence-completeness",
+          "contribution": 20.75
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.72,
+          "evidenceId": "Medellín-education-confidence-freshness",
+          "contribution": 14.4
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.78,
+          "evidenceId": "Medellín-education-confidence-consistency",
+          "contribution": 11.7
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Medellín-education-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.67,
+          "evidenceId": "Medellín-education-digital_gap",
+          "contribution": 13.4
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.75,
+          "evidenceId": "Medellín-education-automation_potential",
+          "contribution": 15
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.56,
+          "evidenceId": "Medellín-education-economic_capacity",
+          "contribution": 8.4
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.74,
+          "evidenceId": "Medellín-education-accessible_market",
+          "contribution": 11.1
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.72,
+          "evidenceId": "Medellín-education-competitive_pressure",
+          "contribution": 7.2
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.88,
+          "evidenceId": "Medellín-education-service_fit",
+          "contribution": 8.8
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.8,
+          "evidenceId": "Medellín-education-accessibility",
+          "contribution": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Medellín-education-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Medellín-education-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Cali-construction",
+      "city": "Cali",
+      "sectorCode": "construction",
+      "sector": "Construction & installers",
+      "period": "2025",
+      "score": 74,
+      "confidence": 76.85,
+      "confidenceLabel": "medium",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.82,
+          "evidenceId": "Cali-construction-confidence-authority",
+          "contribution": 24.6
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.75,
+          "evidenceId": "Cali-construction-confidence-completeness",
+          "contribution": 18.75
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.65,
+          "evidenceId": "Cali-construction-confidence-freshness",
+          "contribution": 13
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.7,
+          "evidenceId": "Cali-construction-confidence-consistency",
+          "contribution": 10.5
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Cali-construction-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.82,
+          "evidenceId": "Cali-construction-digital_gap",
+          "contribution": 16.4
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.81,
+          "evidenceId": "Cali-construction-automation_potential",
+          "contribution": 16.2
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.54,
+          "evidenceId": "Cali-construction-economic_capacity",
+          "contribution": 8.1
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.74,
+          "evidenceId": "Cali-construction-accessible_market",
+          "contribution": 11.1
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.68,
+          "evidenceId": "Cali-construction-competitive_pressure",
+          "contribution": 6.8
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.85,
+          "evidenceId": "Cali-construction-service_fit",
+          "contribution": 8.5
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.69,
+          "evidenceId": "Cali-construction-accessibility",
+          "contribution": 6.9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Cali-construction-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-construction-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Cali-health",
+      "city": "Cali",
+      "sectorCode": "health",
+      "sector": "Clinics & wellness",
+      "period": "2025",
+      "score": 75.65,
+      "confidence": 83.85,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.89,
+          "evidenceId": "Cali-health-confidence-authority",
+          "contribution": 26.7
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.84,
+          "evidenceId": "Cali-health-confidence-completeness",
+          "contribution": 21
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.73,
+          "evidenceId": "Cali-health-confidence-freshness",
+          "contribution": 14.6
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.77,
+          "evidenceId": "Cali-health-confidence-consistency",
+          "contribution": 11.55
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Cali-health-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.7,
+          "evidenceId": "Cali-health-digital_gap",
+          "contribution": 14
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.87,
+          "evidenceId": "Cali-health-automation_potential",
+          "contribution": 17.4
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.7,
+          "evidenceId": "Cali-health-economic_capacity",
+          "contribution": 10.5
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.71,
+          "evidenceId": "Cali-health-accessible_market",
+          "contribution": 10.65
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.65,
+          "evidenceId": "Cali-health-competitive_pressure",
+          "contribution": 6.5
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.91,
+          "evidenceId": "Cali-health-service_fit",
+          "contribution": 9.1
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.75,
+          "evidenceId": "Cali-health-accessibility",
+          "contribution": 7.5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Cali-health-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-health-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Cali-real_estate",
+      "city": "Cali",
+      "sectorCode": "real_estate",
+      "sector": "Real estate",
+      "period": "2025",
+      "score": 70.8,
+      "confidence": 84.9,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.9,
+          "evidenceId": "Cali-real_estate-confidence-authority",
+          "contribution": 27
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.85,
+          "evidenceId": "Cali-real_estate-confidence-completeness",
+          "contribution": 21.25
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.74,
+          "evidenceId": "Cali-real_estate-confidence-freshness",
+          "contribution": 14.8
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.79,
+          "evidenceId": "Cali-real_estate-confidence-consistency",
+          "contribution": 11.85
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Cali-real_estate-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.58,
+          "evidenceId": "Cali-real_estate-digital_gap",
+          "contribution": 11.599999999999998
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.72,
+          "evidenceId": "Cali-real_estate-automation_potential",
+          "contribution": 14.4
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.73,
+          "evidenceId": "Cali-real_estate-economic_capacity",
+          "contribution": 10.95
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.67,
+          "evidenceId": "Cali-real_estate-accessible_market",
+          "contribution": 10.05
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.79,
+          "evidenceId": "Cali-real_estate-competitive_pressure",
+          "contribution": 7.9
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.8,
+          "evidenceId": "Cali-real_estate-service_fit",
+          "contribution": 8
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.79,
+          "evidenceId": "Cali-real_estate-accessibility",
+          "contribution": 7.9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Cali-real_estate-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-real_estate-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Cali-technical_services",
+      "city": "Cali",
+      "sectorCode": "technical_services",
+      "sector": "Technical services",
+      "period": "2025",
+      "score": 75.8,
+      "confidence": 74.4,
+      "confidenceLabel": "medium",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.8,
+          "evidenceId": "Cali-technical_services-confidence-authority",
+          "contribution": 24
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.72,
+          "evidenceId": "Cali-technical_services-confidence-completeness",
+          "contribution": 18
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.61,
+          "evidenceId": "Cali-technical_services-confidence-freshness",
+          "contribution": 12.2
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.68,
+          "evidenceId": "Cali-technical_services-confidence-consistency",
+          "contribution": 10.2
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Cali-technical_services-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.89,
+          "evidenceId": "Cali-technical_services-digital_gap",
+          "contribution": 17.8
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.92,
+          "evidenceId": "Cali-technical_services-automation_potential",
+          "contribution": 18.4
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.48,
+          "evidenceId": "Cali-technical_services-economic_capacity",
+          "contribution": 7.2
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.78,
+          "evidenceId": "Cali-technical_services-accessible_market",
+          "contribution": 11.7
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.59,
+          "evidenceId": "Cali-technical_services-competitive_pressure",
+          "contribution": 5.9
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.82,
+          "evidenceId": "Cali-technical_services-service_fit",
+          "contribution": 8.2
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.66,
+          "evidenceId": "Cali-technical_services-accessibility",
+          "contribution": 6.6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Cali-technical_services-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-technical_services-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Cali-education",
+      "city": "Cali",
+      "sectorCode": "education",
+      "sector": "Academies & professional services",
+      "period": "2025",
+      "score": 71.2,
+      "confidence": 81.15,
+      "confidenceLabel": "high",
+      "status": "scored",
+      "modelVersion": "1.0.0",
+      "confidenceModelVersion": "1.0.0",
+      "confidenceFactors": [
+        {
+          "key": "authority",
+          "label": "Source authority & traceability",
+          "weight": 30,
+          "value": 0.87,
+          "evidenceId": "Cali-education-confidence-authority",
+          "contribution": 26.1
+        },
+        {
+          "key": "completeness",
+          "label": "Required-variable completeness",
+          "weight": 25,
+          "value": 0.8,
+          "evidenceId": "Cali-education-confidence-completeness",
+          "contribution": 20
+        },
+        {
+          "key": "freshness",
+          "label": "Evidence freshness",
+          "weight": 20,
+          "value": 0.69,
+          "evidenceId": "Cali-education-confidence-freshness",
+          "contribution": 13.8
+        },
+        {
+          "key": "consistency",
+          "label": "Cross-source consistency",
+          "weight": 15,
+          "value": 0.75,
+          "evidenceId": "Cali-education-confidence-consistency",
+          "contribution": 11.25
+        },
+        {
+          "key": "entity_resolution",
+          "label": "Entity-resolution confidence",
+          "weight": 10,
+          "value": 1,
+          "evidenceId": "Cali-education-confidence-entity_resolution",
+          "contribution": 10
+        }
+      ],
+      "source": {
+        "name": "Synthetic sample",
+        "url": null,
+        "observedAt": "2025-12-31",
+        "licenseReviewStatus": "pending"
+      },
+      "factors": [
+        {
+          "key": "digital_gap",
+          "label": "Brecha digital",
+          "weight": 20,
+          "value": 0.73,
+          "evidenceId": "Cali-education-digital_gap",
+          "contribution": 14.6
+        },
+        {
+          "key": "automation_potential",
+          "label": "Potencial de automatización",
+          "weight": 20,
+          "value": 0.78,
+          "evidenceId": "Cali-education-automation_potential",
+          "contribution": 15.6
+        },
+        {
+          "key": "economic_capacity",
+          "label": "Capacidad económica",
+          "weight": 15,
+          "value": 0.52,
+          "evidenceId": "Cali-education-economic_capacity",
+          "contribution": 7.8
+        },
+        {
+          "key": "accessible_market",
+          "label": "Mercado accesible",
+          "weight": 15,
+          "value": 0.7,
+          "evidenceId": "Cali-education-accessible_market",
+          "contribution": 10.5
+        },
+        {
+          "key": "competitive_pressure",
+          "label": "Presión competitiva",
+          "weight": 10,
+          "value": 0.64,
+          "evidenceId": "Cali-education-competitive_pressure",
+          "contribution": 6.4
+        },
+        {
+          "key": "service_fit",
+          "label": "Encaje con Neora",
+          "weight": 10,
+          "value": 0.86,
+          "evidenceId": "Cali-education-service_fit",
+          "contribution": 8.6
+        },
+        {
+          "key": "accessibility",
+          "label": "Acceso e identificación",
+          "weight": 10,
+          "value": 0.77,
+          "evidenceId": "Cali-education-accessibility",
+          "contribution": 7.7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "Cali-education-digital_gap",
+          "title": "Brecha digital",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-automation_potential",
+          "title": "Potencial de automatización",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-economic_capacity",
+          "title": "Capacidad económica",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-accessible_market",
+          "title": "Mercado accesible",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-competitive_pressure",
+          "title": "Presión competitiva",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-service_fit",
+          "title": "Encaje con Neora",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-accessibility",
+          "title": "Acceso e identificación",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-confidence-authority",
+          "title": "Source authority & traceability",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-confidence-completeness",
+          "title": "Required-variable completeness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-confidence-freshness",
+          "title": "Evidence freshness",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-confidence-consistency",
+          "title": "Cross-source consistency",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        },
+        {
+          "id": "Cali-education-confidence-entity_resolution",
+          "title": "Entity-resolution confidence",
+          "observedAt": "2025-12-31",
+          "sourceName": "Synthetic sample",
+          "sourceUri": "/api/evidence/source?dataset=colombia_sector_metrics.synthetic.csv",
+          "licenseReviewStatus": "pending"
+        }
+      ]
+    }
+  ]
+}

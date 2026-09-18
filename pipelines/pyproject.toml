@@ -1,0 +1,12 @@
+[project]
+name = "neora-opportunity-pipelines"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["polars>=1.34,<2", "pyarrow>=21,<22", "pandera[polars]>=0.26,<0.27", "boto3>=1.40,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8.4,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = [".."]
+testpaths = ["tests"]

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; --background: #07120f; --surface: #0d1d18; --muted: #8da49c; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at 70% -20%, rgba(42, 189, 137, .18), transparent 38%), #07120f; color: #f2f7f5; font-family: Arial, Helvetica, sans-serif; }
+button, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, select:focus-visible { outline: 2px solid #42d6a4; outline-offset: 2px; }

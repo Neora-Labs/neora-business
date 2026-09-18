@@ -1,0 +1,8 @@
+{
+  "name": "@neora/scoring",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": "./src/index.ts",
+  "scripts": { "test": "vitest run", "typecheck": "tsc --noEmit", "build": "tsc --noEmit" },
+  "devDependencies": { "typescript": "^5.9.3", "vitest": "^3.2.4" }
+}
