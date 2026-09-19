@@ -132,3 +132,14 @@ status: proposed | admitted | suspended | retired
 - **Stale:** compare the source period/download date with its approved freshness window. Missing freshness policy or expired evidence blocks publication, not ingestion for research.
 - **Revisions:** new official bytes create a new dataset version even when the publisher reuses a URL or filename.
 
+
+## Admitted Bogotá pilot sources
+
+The following sources are registered by the official ingestion migration and are the only sources accepted by the administrative upload flow:
+
+| Catalog ID | Official publisher | CIIU / coverage | License / freshness | Ingestion rule |
+|---|---|---|---|---|
+| `emicron-2025` | DANE / DIMPE — [data dictionary](https://microdatos.dane.gov.co/index.php/catalog/914/data-dictionary) | EMICRON 2025, Bogotá filter `COD_DEPTO="11" AND AREA="11"`; CIIU Rev. 4 derived `GRUPOS12` | Official dictionary is mandatory for every used `Pxxxx` label. | `F_EXP` weighted aggregate only; stored as `group_12` contextual evidence, never division evidence. |
+| `ica-2007-2023` | Secretaría Distrital de Hacienda — [download](https://datosabiertos.bogota.gov.co/dataset/62be0dca-281d-4dee-b27e-c65153e9c9bf/resource/b59cbca5-21d1-4854-98ed-be6bfd2b3a32/download/19.-recaudo_ica_sector_ciiu_2007_2023.csv) | Bogotá CIIU SHD declarations and recaudo, 2007–2023 | CC BY 4.0; `latest_observation_year=2023`. | cp1252/semicolon parsing. No CIIU division metric until a versioned, evidence-backed SHD crosswalk is verified. |
+
+The published pilot identifier is exclusively `ciiu_4ac_2022` at two-digit **division** level. CIIU Rev. 5 A.C. is not accepted. An unresolved SHD mapping produces `insufficient_data`, never a truncated or guessed division.

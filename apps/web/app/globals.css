@@ -1,8 +1,35 @@
 @import "tailwindcss";
 
-:root { color-scheme: dark; --background: #07120f; --surface: #0d1d18; --muted: #8da49c; }
+:root {
+  color-scheme: light;
+  --neora-primary: #087e6b;
+  --neora-primary-hover: #066555;
+  --neora-secondary: #3fd0b4;
+  --neora-tertiary: #4b635c;
+  --neora-neutral: #182623;
+  --neora-background: #f5f9f7;
+  --neora-surface: #ffffff;
+  --neora-accent: #e7f7f2;
+  --neora-border: #dfe9e5;
+  --neora-muted: #697c76;
+}
 * { box-sizing: border-box; }
-body { margin: 0; background: radial-gradient(circle at 70% -20%, rgba(42, 189, 137, .18), transparent 38%), #07120f; color: #f2f7f5; font-family: Arial, Helvetica, sans-serif; }
-button, select { font: inherit; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--neora-background);
+  color: var(--neora-neutral);
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+button, select, input { font: inherit; }
 button { cursor: pointer; }
-button:focus-visible, select:focus-visible { outline: 2px solid #42d6a4; outline-offset: 2px; }
+button:focus-visible, select:focus-visible, a:focus-visible, summary:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--neora-secondary) 70%, white);
+  outline-offset: 3px;
+}
+::selection { background: var(--neora-secondary); color: var(--neora-neutral); }
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c8d7d2; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #9db2ab; }

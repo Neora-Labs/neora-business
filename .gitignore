@@ -18,3 +18,4 @@ data/runtime/
 dist/
 *.tsbuildinfo
 *.egg-info/
+packages/db/.tmp-prospects-*.json

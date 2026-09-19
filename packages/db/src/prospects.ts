@@ -1,0 +1,1 @@
+export { summarizeProspects } from "./persistence";

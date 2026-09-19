@@ -24,3 +24,5 @@ The current vertical slice ranks five synthetic sector aliases in Bogotá, Medel
 
 Those gaps are future interface requirements. They require contract, schema, pipeline, persistence, and UI changes outside this documentation-only work.
 
+
+6. [Official-source ingestion](official-ingestion.md) — secured upload, review, queue and source-specific constraints.

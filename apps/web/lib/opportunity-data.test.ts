@@ -12,6 +12,12 @@ const run = { id: "run-1", status: "completed" } as ImportRunRecord;
 const repository: OpportunityRepository = {
   persistImport: vi.fn(),
   findRoleByClerkUserId: vi.fn(),
+  findPreferredLocaleByClerkUserId: vi.fn(),
+  updatePreferredLocaleByClerkUserId: vi.fn(),
+  persistProspectImport: vi.fn(),
+  listProspects: vi.fn(),
+  summarizeProspects: vi.fn(),
+  updateProspect: vi.fn(),
   listMarketScores: vi.fn().mockResolvedValue([score]),
   listImportRuns: vi.fn().mockResolvedValue([run])
 };

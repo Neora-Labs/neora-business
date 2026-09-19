@@ -5,3 +5,7 @@ export * from "./raw-assets";
 export * from "./persistence";
 export * from "./postgres-repository";
 export * from "./runtime";
+export * from "./official-ingestion";
+export * from "./postgres-official-ingestion";
+export * from "./prospects";
+export * from "./postgres-prospects";

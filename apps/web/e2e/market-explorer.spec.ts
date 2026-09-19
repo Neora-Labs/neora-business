@@ -27,6 +27,42 @@ test("makes pending license status and opportunity/confidence separation visible
   await expect(page.getByRole("region", { name: "Import status" })).toBeVisible();
 });
 
+test("summarizes the selected city with real score KPIs and dashboard navigation", async ({ page }) => {
+  await page.goto("/");
+
+  const overview = page.getByRole("region", { name: "Market overview" });
+  await expect(overview.getByTestId("dashboard-kpi")).toHaveCount(4);
+  await expect(overview.getByText("Top opportunity")).toBeVisible();
+  await expect(overview.getByText("79", { exact: true })).toBeVisible();
+  await expect(overview.getByText("Average opportunity")).toBeVisible();
+  await expect(overview.getByText("76.4", { exact: true })).toBeVisible();
+  await expect(overview.getByText("Evidence confidence")).toBeVisible();
+  await expect(overview.getByText("86.7", { exact: true })).toBeVisible();
+  await expect(overview.getByText("Evaluated sectors")).toBeVisible();
+  await expect(overview.getByText("5", { exact: true })).toBeVisible();
+
+  const navigation = page.getByRole("navigation", { name: "Primary" });
+  await expect(navigation.getByRole("link", { name: "Overview" })).toHaveAttribute("href", "#overview");
+  await expect(navigation.getByRole("link", { name: "Ranking" })).toHaveAttribute("href", "#ranking");
+  await expect(navigation.getByRole("link", { name: "Evidence" })).toHaveAttribute("href", "#evidence");
+
+  await page.getByLabel("City", { exact: true }).selectOption("Cali");
+  await expect(overview.getByText("75.8", { exact: true })).toBeVisible();
+  await expect(overview.getByText("73.5", { exact: true })).toBeVisible();
+  await expect(overview.getByText("80.2", { exact: true })).toBeVisible();
+});
+
+test("keeps the dashboard usable at a mobile viewport", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+
+  await expect(page.getByRole("navigation", { name: "Primary" })).toBeVisible();
+  await expect(page.getByLabel("City")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Sector ranking" })).toBeVisible();
+  const hasHorizontalOverflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
+  expect(hasHorizontalOverflow).toBe(false);
+});
+
 test("serves repository-backed market and import status APIs without a remote trigger", async ({ request }) => {
   const markets = await request.get("/api/markets");
   expect(markets.status()).toBe(200);

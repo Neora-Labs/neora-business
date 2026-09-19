@@ -13,6 +13,9 @@
         "Cali"
       ]
     },
+    "sectorCode": {
+      "type": "string"
+    },
     "sector": {
       "type": "string"
     },
@@ -49,11 +52,65 @@
       "type": "string",
       "enum": [
         "scored",
-        "insufficient_data"
+        "insufficient_data",
+        "excluded",
+        "pending_validation",
+        "rejected"
       ]
     },
     "modelVersion": {
       "type": "string"
+    },
+    "confidenceModelVersion": {
+      "type": "string"
+    },
+    "confidenceFactors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "weight": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "contribution": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "evidenceId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "label",
+          "value",
+          "weight",
+          "contribution",
+          "evidenceId"
+        ],
+        "additionalProperties": false
+      }
     },
     "source": {
       "type": "object",
@@ -139,11 +196,52 @@
         ],
         "additionalProperties": false
       }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "observedAt": {
+            "type": "string"
+          },
+          "sourceName": {
+            "type": "string"
+          },
+          "sourceUri": {
+            "type": "string"
+          },
+          "licenseReviewStatus": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "approved",
+              "rejected"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "observedAt",
+          "sourceName",
+          "sourceUri",
+          "licenseReviewStatus"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "id",
     "city",
+    "sectorCode",
     "sector",
     "period",
     "score",
@@ -151,8 +249,11 @@
     "confidenceLabel",
     "status",
     "modelVersion",
+    "confidenceModelVersion",
+    "confidenceFactors",
     "source",
-    "factors"
+    "factors",
+    "evidence"
   ],
   "additionalProperties": false
 }

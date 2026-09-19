@@ -1,5 +1,6 @@
+import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
-import { LocalFileOpportunityRepository, PostgresOpportunityRepository, createOpportunityRepository } from "../src/index";
+import { LocalFileOpportunityRepository, PostgresOpportunityRepository, createOpportunityRepository, resolveLocalDemoRepositoryPath } from "../src/index";
 
 describe("runtime repository factory", () => {
   it("uses local persistence only when demo mode is explicitly enabled", () => {
@@ -21,5 +22,27 @@ describe("runtime repository factory", () => {
     expect(runtime.mode).toBe("postgres");
     expect(runtime.repository).toBeInstanceOf(PostgresOpportunityRepository);
     await runtime.close?.();
+  });
+
+  it("resolves local storage from an explicit caller base instead of the process cwd", () => {
+    const workspaceRoot = resolve("virtual-workspace");
+    const importCallerBase = workspaceRoot;
+    const webCallerBase = resolve(workspaceRoot, "apps", "web", "..", "..");
+
+    const importedFile = resolveLocalDemoRepositoryPath({}, { localDemoBaseDirectory: importCallerBase });
+    const servedFile = resolveLocalDemoRepositoryPath({}, { localDemoBaseDirectory: webCallerBase });
+
+    expect(importedFile).toBe(resolve(workspaceRoot, "data", "runtime", "neora-demo.json"));
+    expect(servedFile).toBe(importedFile);
+  });
+
+  it("keeps an explicit demo data override ahead of the caller default", () => {
+    const workspaceRoot = resolve("virtual-workspace");
+    const override = resolve("isolated-demo-data");
+
+    expect(resolveLocalDemoRepositoryPath(
+      { NEORA_DEMO_DATA_DIR: override },
+      { localDemoBaseDirectory: workspaceRoot },
+    )).toBe(resolve(override, "neora-demo.json"));
   });
 });

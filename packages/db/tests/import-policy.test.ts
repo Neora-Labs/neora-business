@@ -23,4 +23,11 @@ describe("role authorization", () => {
     expect(hasPermission("commercial_partner", "run_import")).toBe(false);
     expect(hasPermission("technical_partner", "activate_model")).toBe(false);
   });
+
+  it("grants prospect access only to administrators and analysts", () => {
+    expect(hasPermission("administrator", "view_prospects")).toBe(true);
+    expect(hasPermission("analyst", "manage_prospects")).toBe(true);
+    expect(hasPermission("commercial_partner", "view_prospects")).toBe(false);
+    expect(hasPermission("technical_partner", "manage_prospects")).toBe(false);
+  });
 });

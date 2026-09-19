@@ -2,11 +2,14 @@ import { createHash, randomUUID } from "node:crypto";
 import { readFile, rm, stat } from "node:fs/promises";
 import { resolve } from "node:path";
 import {
-  createOpportunityRepository, LocalRawAssetStore, S3RawAssetStore,
+  createOpportunityRepository, LocalRawAssetStore, resolveLocalDemoDataDirectory, S3RawAssetStore,
   type OpportunityImportBundle, type RawAssetStore
 } from "@neora/db";
 import { CONFIDENCE_MODEL_V1, SECTOR_MODEL_V1 } from "@neora/scoring";
 import generated from "../apps/web/data/market-scores.generated.json";
+
+const WORKSPACE_ROOT = resolve(import.meta.dirname, "..");
+const localRuntimeOptions = { localDemoBaseDirectory: WORKSPACE_ROOT } as const;
 
 function stableUuid(value: string): string {
   const hex = createHash("sha256").update(value).digest("hex").slice(0, 32).split("");
@@ -15,22 +18,22 @@ function stableUuid(value: string): string {
 }
 
 async function runtimeAdapters(): Promise<{ repository: ReturnType<typeof createOpportunityRepository>["repository"]; rawAssets: RawAssetStore; close?: () => Promise<void> }> {
+  const localDataDirectory = resolveLocalDemoDataDirectory(process.env, localRuntimeOptions);
   if (process.env.NEORA_RESET_DEMO_DATA === "true" && process.env.NEORA_LOCAL_DEMO === "true") {
-    await rm(resolve(process.env.NEORA_DEMO_DATA_DIR ?? "data/runtime"), { recursive: true, force: true });
+    await rm(localDataDirectory, { recursive: true, force: true });
   }
-  const runtime = createOpportunityRepository();
+  const runtime = createOpportunityRepository(process.env, localRuntimeOptions);
   if (runtime.mode === "postgres") {
     if (!process.env.RAW_ASSET_BUCKET) throw new Error("RAW_ASSET_BUCKET is required outside local demo mode");
     return { ...runtime, rawAssets: new S3RawAssetStore(process.env.RAW_ASSET_BUCKET, process.env.AWS_REGION ?? "sa-east-1", undefined, process.env.S3_ENDPOINT) };
   }
-  const root = resolve(process.env.NEORA_DEMO_DATA_DIR ?? "data/runtime");
-  return { ...runtime, rawAssets: new LocalRawAssetStore(resolve(root, "raw")) };
+  return { ...runtime, rawAssets: new LocalRawAssetStore(resolve(localDataDirectory, "raw")) };
 }
 
 async function main() {
-  const handoff = JSON.parse(await readFile(resolve("data/runtime/normalized-batch.json"), "utf8")) as { checksum: string; rows: Array<Record<string, unknown>> };
+  const handoff = JSON.parse(await readFile(resolve(WORKSPACE_ROOT, "data/runtime/normalized-batch.json"), "utf8")) as { checksum: string; rows: Array<Record<string, unknown>> };
   if (handoff.checksum !== generated.checksumSha256) throw new Error("Python handoff checksum does not match generated scores");
-  const sourcePath = resolve("data/samples/colombia_sector_metrics.synthetic.csv");
+  const sourcePath = resolve(WORKSPACE_ROOT, "data/samples/colombia_sector_metrics.synthetic.csv");
   const adapters = await runtimeAdapters();
   try {
     const rawUri = await adapters.rawAssets.putImmutable({ path: sourcePath, checksum: handoff.checksum, contentType: "text/csv" });
