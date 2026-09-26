@@ -97,9 +97,17 @@ export class InMemoryOfficialIngestionRepository implements OfficialIngestionRep
   }
   saveMappings(requestId: string, mappings: IcaMapping[]) { this.#mappings.set(requestId, structuredClone(mappings)); }
   mappings(requestId: string) { return structuredClone(this.#mappings.get(requestId) ?? []); }
-  completeIca(requestId: string, records: Array<{ sourceCode: string; sourceDescription: string }>) {
+  completeIca(requestId: string, records: Array<{ sourceCode: string; sourceDescription: string; targetCiiuDivision?: string | null; targetCiiuClass?: string | null; mappingMethod?: string | null; evidenceUrl?: string | null; mappingStatus?: MappingStatus }>) {
     const request = this.#requests.get(requestId); if (!request) throw new Error("Import request not found");
-    const mappings: IcaMapping[] = records.map((record) => ({ ...record, targetCiiuDivision: null, mappingStatus: "unresolved" }));
+    const mappings: IcaMapping[] = records.map((record) => ({
+      sourceCode: record.sourceCode,
+      sourceDescription: record.sourceDescription,
+      targetCiiuDivision: record.targetCiiuDivision ?? null,
+      targetCiiuClass: record.targetCiiuClass ?? null,
+      mappingMethod: record.mappingMethod ?? null,
+      evidenceUrl: record.evidenceUrl ?? null,
+      mappingStatus: record.mappingStatus ?? "unresolved"
+    }));
     this.saveMappings(requestId, mappings);
     request.status = mappings.some((mapping) => mapping.mappingStatus !== "verified") ? "blocked_mapping" : "completed";
     this.#requests.set(requestId, request); return structuredClone(request);

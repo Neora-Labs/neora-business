@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { calculateConfidence, calculateScore, confidenceLabel, CONFIDENCE_MODEL_V1, SECTOR_MODEL_V1 } from "../src/index";
+import { calculateConfidence, calculateScore, confidenceLabel, CONFIDENCE_MODEL_V1, SECTOR_MODEL_V1, SECTOR_MODEL_V2 } from "../src/index";
 
 describe("deterministic scoring", () => {
   it("returns the exact same unrounded result for identical input and version", () => {
@@ -37,3 +37,34 @@ describe("versioned confidence scoring", () => {
     expect(result.factors.reduce((sum, factor) => sum + (factor.contribution ?? 0), 0)).toBe(80);
   });
 });
+
+describe("Bogotá pilot scoring model v2", () => {
+  it("calculates score with 65% coverage from fiscal factors and renormalizes correctly", () => {
+    // market_size (25) + dynamism (20) + economic_capacity (20) = 65% >= 60%
+    const factors = SECTOR_MODEL_V2.factors.map((factor) => {
+      if (factor.key === "digital_gap" || factor.key === "automation_potential") {
+        return { ...factor, value: null, evidenceId: `ev-${factor.key}` };
+      }
+      return { ...factor, value: 0.6, evidenceId: `ev-${factor.key}` };
+    });
+    const result = calculateScore(SECTOR_MODEL_V2, factors);
+    expect(result.modelId).toBe("sector-opportunity-bogota-v2");
+    expect(result.status).toBe("scored");
+    expect(result.coverage).toBe(65);
+    expect(result.score).toBe(60);
+    expect(result.factors.find((f) => f.key === "digital_gap")?.value).toBeNull();
+  });
+
+  it("returns insufficient_data when coverage is below 60%", () => {
+    // Only market_size (25) + dynamism (20) = 45% < 60%
+    const factors = SECTOR_MODEL_V2.factors.map((factor) => {
+      const isPresent = factor.key === "market_size" || factor.key === "dynamism";
+      return { ...factor, value: isPresent ? 0.7 : null, evidenceId: `ev-${factor.key}` };
+    });
+    const result = calculateScore(SECTOR_MODEL_V2, factors);
+    expect(result.status).toBe("insufficient_data");
+    expect(result.score).toBeNull();
+    expect(result.coverage).toBe(45);
+  });
+});
+

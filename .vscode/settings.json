@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "python",
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "pipelines/tests"
+  ],
+  "python.testing.unittestEnabled": false
+}
