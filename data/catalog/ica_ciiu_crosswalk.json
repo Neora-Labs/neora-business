@@ -1,0 +1,395 @@
+{
+  "version": "1.0.0",
+  "name": "SHD ICA a CIIU Rev. 4 A.C. Bogotá Crosswalk",
+  "authority": "Secretaría Distrital de Hacienda de Bogotá (Resolución DDI-000305) y DANE (Resolución 0549 de 2020)",
+  "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+  "mappings": [
+    {
+      "source_code": "1011",
+      "source_description": "Procesamiento y conservación de carne y productos cárnicos",
+      "target_ciiu_division": "10",
+      "target_ciiu_class": "1011",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "1081",
+      "source_description": "Elaboración de productos de panadería",
+      "target_ciiu_division": "10",
+      "target_ciiu_class": "1081",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "1101",
+      "source_description": "Destilación, rectificación y mezcla de bebidas alcohólicas",
+      "target_ciiu_division": "11",
+      "target_ciiu_class": "1101",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "1410",
+      "source_description": "Confección de prendas de vestir, excepto prendas de piel",
+      "target_ciiu_division": "14",
+      "target_ciiu_class": "1410",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "2100",
+      "source_description": "Fabricación de productos farmacéuticos y medicamentos",
+      "target_ciiu_division": "21",
+      "target_ciiu_class": "2100",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "2610",
+      "source_description": "Fabricación de componentes y tableros electrónicos",
+      "target_ciiu_division": "26",
+      "target_ciiu_class": "2610",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4111",
+      "source_description": "Construcción de edificios residenciales",
+      "target_ciiu_division": "41",
+      "target_ciiu_class": "4111",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4112",
+      "source_description": "Construcción de edificios no residenciales",
+      "target_ciiu_division": "41",
+      "target_ciiu_class": "4112",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4210",
+      "source_description": "Construcción de carreteras y vías de ferrocarril",
+      "target_ciiu_division": "42",
+      "target_ciiu_class": "4210",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4321",
+      "source_description": "Instalaciones eléctricas",
+      "target_ciiu_division": "43",
+      "target_ciiu_class": "4321",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4511",
+      "source_description": "Comercio de vehículos automotores nuevos",
+      "target_ciiu_division": "45",
+      "target_ciiu_class": "4511",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4645",
+      "source_description": "Comercio al por mayor de productos farmacéuticos y cosméticos",
+      "target_ciiu_division": "46",
+      "target_ciiu_class": "4645",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4711",
+      "source_description": "Comercio al por menor en establecimientos no especializados (supermercados)",
+      "target_ciiu_division": "47",
+      "target_ciiu_class": "4711",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4741",
+      "source_description": "Comercio al por menor de computadores, equipos periféricos y programas de informática",
+      "target_ciiu_division": "47",
+      "target_ciiu_class": "4741",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "4923",
+      "source_description": "Transporte de carga por carretera",
+      "target_ciiu_division": "49",
+      "target_ciiu_class": "4923",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "5210",
+      "source_description": "Almacenamiento y depósito",
+      "target_ciiu_division": "52",
+      "target_ciiu_class": "5210",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "5511",
+      "source_description": "Alojamiento en hoteles",
+      "target_ciiu_division": "55",
+      "target_ciiu_class": "5511",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "5611",
+      "source_description": "Expendio a la mesa de comidas preparadas",
+      "target_ciiu_division": "56",
+      "target_ciiu_class": "5611",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6110",
+      "source_description": "Actividades de telecomunicaciones alámbricas",
+      "target_ciiu_division": "61",
+      "target_ciiu_class": "6110",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6201",
+      "source_description": "Actividades de desarrollo de sistemas informáticos (planificación, análisis, diseño, programación, pruebas)",
+      "target_ciiu_division": "62",
+      "target_ciiu_class": "6201",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6202",
+      "source_description": "Actividades de consultoría informática y actividades de administración de instalaciones informáticas",
+      "target_ciiu_division": "62",
+      "target_ciiu_class": "6202",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6209",
+      "source_description": "Otras actividades de tecnologías de información y actividades de servicios informáticos",
+      "target_ciiu_division": "62",
+      "target_ciiu_class": "6209",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6311",
+      "source_description": "Procesamiento de datos, alojamiento (hosting) y actividades conexas",
+      "target_ciiu_division": "63",
+      "target_ciiu_class": "6311",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6412",
+      "source_description": "Bancos comerciales",
+      "target_ciiu_division": "64",
+      "target_ciiu_class": "6412",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6810",
+      "source_description": "Actividades inmobiliarias realizadas con bienes propios o arrendados",
+      "target_ciiu_division": "68",
+      "target_ciiu_class": "6810",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6820",
+      "source_description": "Actividades inmobiliarias realizadas a cambio de una retribución o por contrata",
+      "target_ciiu_division": "68",
+      "target_ciiu_class": "6820",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6910",
+      "source_description": "Actividades jurídicas",
+      "target_ciiu_division": "69",
+      "target_ciiu_class": "6910",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "6920",
+      "source_description": "Actividades de contabilidad, teneduría de libros y auditoría; asesoría tributaria",
+      "target_ciiu_division": "69",
+      "target_ciiu_class": "6920",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "7020",
+      "source_description": "Actividades de consultoría de gestión",
+      "target_ciiu_division": "70",
+      "target_ciiu_class": "7020",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "7110",
+      "source_description": "Actividades de arquitectura e ingeniería y actividades conexas de consultoría técnica",
+      "target_ciiu_division": "71",
+      "target_ciiu_class": "7110",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "7310",
+      "source_description": "Publicidad",
+      "target_ciiu_division": "73",
+      "target_ciiu_class": "7310",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "7730",
+      "source_description": "Alquiler y arrendamiento de otros tipos de maquinaria, equipo y bienes tangibles",
+      "target_ciiu_division": "77",
+      "target_ciiu_class": "7730",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "7810",
+      "source_description": "Actividades de agencias de empleo",
+      "target_ciiu_division": "78",
+      "target_ciiu_class": "7810",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "8010",
+      "source_description": "Actividades de seguridad privada",
+      "target_ciiu_division": "80",
+      "target_ciiu_class": "8010",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "8211",
+      "source_description": "Servicios integrales de oficina",
+      "target_ciiu_division": "82",
+      "target_ciiu_class": "8211",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "8511",
+      "source_description": "Educación de la primera infancia",
+      "target_ciiu_division": "85",
+      "target_ciiu_class": "8511",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "8544",
+      "source_description": "Educación superior (universidades)",
+      "target_ciiu_division": "85",
+      "target_ciiu_class": "8544",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "8610",
+      "source_description": "Actividades de hospitales y clínicas con internación",
+      "target_ciiu_division": "86",
+      "target_ciiu_class": "8610",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "8621",
+      "source_description": "Actividades de la práctica médica, sin internación",
+      "target_ciiu_division": "86",
+      "target_ciiu_class": "8621",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "8691",
+      "source_description": "Actividades de apoyo diagnóstico (laboratorios clínicos)",
+      "target_ciiu_division": "86",
+      "target_ciiu_class": "8691",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "9001",
+      "source_description": "Creación de obras artísticas",
+      "target_ciiu_division": "90",
+      "target_ciiu_class": "9001",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "9311",
+      "source_description": "Gestión de instalaciones deportivas",
+      "target_ciiu_division": "93",
+      "target_ciiu_class": "9311",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    },
+    {
+      "source_code": "9511",
+      "source_description": "Mantenimiento y reparación de computadores y de equipo periférico",
+      "target_ciiu_division": "95",
+      "target_ciiu_class": "9511",
+      "mapping_method": "Equivalencia directa por clase y división CIIU Rev. 4 A.C.",
+      "evidence_url": "https://www.shd.gov.co/shd/clasificacion-industrial-internacional-uniforme-ciiu",
+      "mapping_status": "verified"
+    }
+  ]
+}

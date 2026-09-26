@@ -11,5 +11,5 @@ export default defineConfig({
     timeout: 120_000,
     env: { ...process.env, NEXT_DIST_DIR: ".next-e2e", NEORA_LOCAL_DEMO: "true", NEORA_RESET_DEMO_DATA: "true", NEORA_DEMO_DATA_DIR: resolve(process.cwd(), "../../data/e2e-runtime") }
   },
-  projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }]
+  projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"], channel: "chrome" } }]
 });

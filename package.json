@@ -6,7 +6,7 @@
   "scripts": {
     "build": "pnpm data:sample && pnpm -r build",
     "data:sample": "tsx scripts/generate-sample.ts",
-    "import:sample": "pnpm data:sample && uv run --project pipelines python -m pipelines.src.run_sample --handoff data/runtime/normalized-batch.json && tsx --env-file-if-exists=apps/web/.env.local scripts/import-sample.ts",
+    "import:sample": "pnpm data:sample && python -m pipelines.src.run_sample --handoff data/runtime/normalized-batch.json && tsx --env-file-if-exists=apps/web/.env.local scripts/import-sample.ts",
     "dev": "pnpm --filter @neora/web dev",
     "test": "pnpm -r test",
     "lint": "pnpm --filter @neora/web lint",

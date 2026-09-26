@@ -42,5 +42,11 @@ describe("official source ingestion workflow", () => {
     expect(approved.ciiuVersion).toBe(CIIU_4AC_2022);
     expect(repository.claimNext("worker-1")).toMatchObject({ id: created.id, status: "processing" });
     expect(repository.completeIca(created.id, [{ sourceCode: "1234", sourceDescription: "Activity" }]).status).toBe("blocked_mapping");
+    expect(repository.completeIca(created.id, [{
+      sourceCode: "6201",
+      sourceDescription: "Software",
+      targetCiiuDivision: "62",
+      mappingStatus: "verified"
+    }]).status).toBe("completed");
   });
 });

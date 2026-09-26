@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Neora: Iniciar Servidor Web (pnpm dev)",
+      "type": "shell",
+      "command": "pnpm dev",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "next dev",
+          "endsPattern": "Ready in"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Neora: Cargar Datos de Muestra (pnpm import:sample)",
+      "type": "shell",
+      "command": "pnpm import:sample",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Neora: Correr Tests Unitarios (pnpm test)",
+      "type": "shell",
+      "command": "pnpm test",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "Neora: Correr Tests Python (pytest)",
+      "type": "shell",
+      "command": "python -m pytest pipelines/tests",
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}

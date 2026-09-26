@@ -47,6 +47,20 @@ export const SECTOR_MODEL_V1 = {
   ]
 } as const satisfies ScoreModel;
 
+export const SECTOR_MODEL_V2 = {
+  id: "sector-opportunity-bogota-v2",
+  name: "Bogotá CIIU division opportunity",
+  version: "2.0.0",
+  minimumCoverage: 60,
+  factors: [
+    { key: "market_size", label: "Tamaño de mercado", weight: 25 },
+    { key: "dynamism", label: "Dinamismo económico", weight: 20 },
+    { key: "economic_capacity", label: "Capacidad económica", weight: 20 },
+    { key: "digital_gap", label: "Brecha digital", weight: 20 },
+    { key: "automation_potential", label: "Potencial de automatización", weight: 15 }
+  ]
+} as const satisfies ScoreModel;
+
 export const CONFIDENCE_MODEL_V1 = {
   id: "evidence-confidence-v1",
   name: "Evidence confidence",

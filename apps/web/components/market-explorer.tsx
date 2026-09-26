@@ -1,7 +1,17 @@
 "use client";
 
+import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useMemo, useState, type ReactNode } from "react";
 import { Badge, cn } from "@neora/ui";
+
+const MarketMatrixChart = dynamic(
+  () => import("./market-matrix-chart").then((m) => m.MarketMatrixChart),
+  {
+    ssr: false,
+    loading: () => <div className="h-[280px] w-full animate-pulse rounded-xl bg-[#f5f9f7]" />,
+  }
+);
 import { LocaleSelector } from "@/components/locale-selector";
 import { getMessages, type Locale } from "@/lib/i18n";
 import type { SectorScoreContract } from "@neora/contracts";
@@ -16,8 +26,10 @@ import {
   FileSearch,
   Gauge,
   LayoutDashboard,
+  LayoutGrid,
   MapPin,
   Menu,
+  Search,
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
@@ -36,13 +48,49 @@ export function MarketExplorer({ scores, cities, importRuns = [], locale }: Mark
   const number = new Intl.NumberFormat(locale, { maximumFractionDigits: 1 });
   const [city, setCity] = useState(cities[0]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const ranked = useMemo(
     () => scores.filter((score) => score.city === city).sort((a, b) => (b.score ?? -1) - (a.score ?? -1)),
     [scores, city],
   );
-  const selected = scores.find((score) => score.id === selectedId) ?? ranked[0];
+  const filteredRanked = useMemo(() => {
+    if (!searchQuery.trim()) return ranked;
+    const q = searchQuery.toLowerCase().trim();
+    return ranked.filter((s) => s.sector.toLowerCase().includes(q) || s.sectorCode.toLowerCase().includes(q));
+  }, [ranked, searchQuery]);
+  const selected = scores.find((score) => score.id === selectedId) ?? filteredRanked[0] ?? ranked[0];
   const overview = useMemo(() => summarize(ranked), [ranked]);
   const latestImport = importRuns[0];
+
+  const matrixData = useMemo(() => {
+    return ranked
+      .filter((s) => s.score !== null)
+      .map((s) => {
+        const opp = s.score ?? 0;
+        const conf = s.confidence ?? 0;
+        let quadrant = 4;
+        let color = "#94a3b8";
+        if (opp >= 65 && conf >= 60) {
+          quadrant = 1;
+          color = "#087e6b";
+        } else if (opp >= 65 && conf < 60) {
+          quadrant = 2;
+          color = "#d97706";
+        } else if (opp < 65 && conf >= 60) {
+          quadrant = 3;
+          color = "#64748b";
+        }
+        return {
+          id: s.id,
+          name: s.sector,
+          code: s.sectorCode,
+          opportunity: opp,
+          confidence: conf,
+          quadrant,
+          color,
+        };
+      });
+  }, [ranked]);
 
   if (!selected) {
     return (
@@ -150,17 +198,57 @@ export function MarketExplorer({ scores, cities, importRuns = [], locale }: Mark
             <p className="mt-3 shrink-0 text-xs font-bold text-[#087e6b] sm:mt-0">{t.model} v{selected.modelVersion} · {t.period} {selected.period}</p>
           </section>
 
+          <section id="matrix" aria-label={t.matrixTitle} className="scroll-mt-32 rounded-[24px] border border-[#dfe9e5] bg-white p-5 shadow-[0_12px_40px_rgba(24,38,35,0.05)] sm:p-6">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-[#e6efec] pb-4">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#087e6b]">{t.researchPriority}</p>
+                <h2 className="mt-1 text-xl font-extrabold tracking-tight">{t.matrixTitle}</h2>
+                <p className="mt-1 text-xs text-[#697c76]">{t.matrixHelp}</p>
+              </div>
+              <div className="flex flex-wrap items-center gap-3 text-xs font-semibold">
+                <span className="flex items-center gap-1.5"><span className="size-2.5 rounded-full bg-[#087e6b]" /> Q1: {t.quadrant1}</span>
+                <span className="flex items-center gap-1.5"><span className="size-2.5 rounded-full bg-[#d97706]" /> Q2: {t.quadrant2}</span>
+                <span className="flex items-center gap-1.5"><span className="size-2.5 rounded-full bg-[#64748b]" /> Q3: {t.quadrant3}</span>
+              </div>
+            </div>
+            <div className="mt-4 w-full" style={{ minHeight: 280 }}>
+              <MarketMatrixChart
+                matrixData={matrixData}
+                selectedId={selected.id}
+                onSelectId={setSelectedId}
+                t={t}
+                number={number}
+              />
+            </div>
+          </section>
+
           <section className="grid min-w-0 grid-cols-1 items-start gap-6 xl:grid-cols-[minmax(0,1.35fr)_minmax(340px,.65fr)]">
             <div id="ranking" className="scroll-mt-32 overflow-hidden rounded-[24px] border border-[#dfe9e5] bg-white shadow-[0_12px_40px_rgba(24,38,35,0.05)]">
-              <div className="flex items-center justify-between gap-4 border-b border-[#e6efec] p-5 sm:p-6">
-                <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#087e6b]">{t.researchPriority}</p><h2 className="mt-1 text-xl font-extrabold tracking-tight">{t.sectorRanking}</h2><p className="mt-1 text-xs text-[#697c76]">{t.selectSector}</p></div>
-                <span className="hidden rounded-xl bg-[#e7f7f2] px-3 py-2 text-xs font-bold text-[#087e6b] sm:inline-flex">{ranked.length} {t.sectors}</span>
+              <div className="flex flex-col gap-3 border-b border-[#e6efec] p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#087e6b]">{t.researchPriority}</p>
+                  <h2 className="mt-1 text-xl font-extrabold tracking-tight">{t.sectorRanking}</h2>
+                  <p className="mt-1 text-xs text-[#697c76]">{t.selectSector}</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2 rounded-xl border border-[#d6e3df] bg-[#f8fbfa] px-3 py-1.5 text-xs focus-within:border-[#087e6b]">
+                    <Search className="size-4 text-[#82918c]" />
+                    <input
+                      type="text"
+                      placeholder={t.searchSector}
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-40 sm:w-48 bg-transparent outline-none placeholder:text-[#9aa9a4]"
+                    />
+                  </div>
+                  <span className="hidden rounded-xl bg-[#e7f7f2] px-3 py-2 text-xs font-bold text-[#087e6b] sm:inline-flex">{filteredRanked.length} {t.sectors}</span>
+                </div>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full min-w-[650px] text-left">
                   <thead className="bg-[#f9fbfa] text-[11px] font-bold uppercase tracking-[0.13em] text-[#82918c]"><tr><th className="px-5 py-4 sm:px-6">#</th><th className="px-3 py-4">{t.sector}</th><th className="px-3 py-4 text-right">{t.opportunity}</th><th className="px-5 py-4 text-right sm:px-6">{t.confidence}</th></tr></thead>
                   <tbody>
-                    {ranked.map((score, index) => {
+                    {filteredRanked.map((score, index) => {
                       const active = selected.id === score.id;
                       return (
                         <tr data-testid="sector-row" key={score.id} className={cn("border-t border-[#edf2f0] transition", active ? "bg-[#edf8f4]" : "hover:bg-[#f8fbfa]") }>
@@ -193,6 +281,14 @@ export function MarketExplorer({ scores, cities, importRuns = [], locale }: Mark
                 <Metric icon={<Gauge className="size-4" />} label={t.opportunity} value={selected.score} locale={locale} />
                 <Metric icon={<ShieldCheck className="size-4" />} label={t.confidence} value={selected.confidence} locale={locale} />
               </div>
+
+              <Link
+                href={`/prospects?sector=${encodeURIComponent(selected.sector)}`}
+                className="mb-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#087e6b] px-4 py-2.5 text-xs font-bold text-white shadow-[0_4px_12px_rgba(8,126,107,0.18)] transition hover:bg-[#076858]"
+              >
+                <Building2 className="size-4" />
+                {t.viewProspectsForSector}
+              </Link>
 
               <h3 className="mb-3 text-sm font-extrabold">{t.factorEvidence}</h3>
               <div className="space-y-3.5">
@@ -237,6 +333,7 @@ function Navigation({ locale }: { locale: Locale }) {
   const t = getMessages(locale);
   const links = [
     { href: "#overview", label: t.overview, icon: <LayoutDashboard className="size-5" /> },
+    { href: "#matrix", label: t.matrixTitle, icon: <LayoutGrid className="size-5" /> },
     { href: "#ranking", label: t.ranking, icon: <BarChart3 className="size-5" /> },
     { href: "#evidence", label: t.navEvidence, icon: <FileSearch className="size-5" /> },
     { href: "/prospects", label: t.prospectsNav, icon: <Building2 className="size-5" /> },
